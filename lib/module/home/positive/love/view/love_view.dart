@@ -16,6 +16,7 @@ class LoveView extends StatefulWidget {
           child: Column(
             children: [
               ListView.builder(
+                controller: controller.scrollController,
                 itemCount: controller.love.length,
                 physics: const ScrollPhysics(),
                 shrinkWrap: true,

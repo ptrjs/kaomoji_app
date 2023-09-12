@@ -2,21 +2,35 @@ import 'package:flutter/material.dart';
 import 'package:kaomoji_app/core.dart';
 import '../view/love_view.dart';
 
-class LoveController extends State<LoveView> {
+class LoveController extends State<LoveView>
+    with AutomaticKeepAliveClientMixin {
   static late LoveController instance;
   late LoveView view;
 
   @override
   void initState() {
     instance = this;
+
     super.initState();
+    scrollController = ScrollController(initialScrollOffset: 0.0);
   }
 
   @override
-  void dispose() => super.dispose();
+  void dispose() {
+    scrollController.dispose();
+    super.dispose();
+  }
 
   @override
-  Widget build(BuildContext context) => widget.build(context, this);
+  bool get wantKeepAlive => true;
+
+  @override
+  Widget build(BuildContext context) {
+    super.build(context);
+    return widget.build(context, this);
+  }
+
+  ScrollController scrollController = ScrollController();
 
   List love = [
     "(ﾉ´ з `)ノ",
