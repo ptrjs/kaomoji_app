@@ -29,8 +29,8 @@ class FavoriteController extends State<FavoriteView>
 
   ScrollController scrollController = ScrollController();
 
-  removeFavorite(index) {
-    favorite.removeAt(index);
+  removeFavorite(item) {
+    favorite.remove(item);
     setState(() {});
   }
 

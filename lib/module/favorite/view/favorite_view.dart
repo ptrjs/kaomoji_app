@@ -27,7 +27,7 @@ class FavoriteView extends StatefulWidget {
                       : Colors.white;
                   return GestureDetector(
                     onTap: () => GeneralMethod().copyTextToClipboard(item),
-                    onDoubleTap: () => controller.removeFavorite(index),
+                    onDoubleTap: () => controller.removeFavorite(item),
                     child: Card(
                       color: cardColor,
                       child: ListTile(
