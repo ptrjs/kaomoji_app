@@ -2,6 +2,8 @@ import 'package:clipboard/clipboard.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
+import '../module/favorite/controller/favorite_controller.dart';
+
 class GeneralMethod {
   copyTextToClipboard(textToCopy) {
     FlutterClipboard.copy(textToCopy).then((_) {
@@ -16,4 +18,6 @@ class GeneralMethod {
       );
     });
   }
+
+  addToFavorite(item) {}
 }
