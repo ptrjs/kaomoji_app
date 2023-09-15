@@ -16,8 +16,9 @@ class JoyView extends StatefulWidget {
           child: Column(
             children: [
               ListView.builder(
+                controller: controller.scrollController,
                 itemCount: controller.joy.length,
-                physics: const ScrollPhysics(),
+                physics: ScrollPhysics(),
                 shrinkWrap: true,
                 itemBuilder: (BuildContext context, int index) {
                   var item = controller.joy[index];
@@ -26,6 +27,7 @@ class JoyView extends StatefulWidget {
                       : Colors.white;
                   return GestureDetector(
                     onTap: () => GeneralMethod().copyTextToClipboard(item),
+                    onDoubleTap: () => GeneralMethod().addToFavorite(item),
                     child: Card(
                       color: cardColor,
                       child: ListTile(

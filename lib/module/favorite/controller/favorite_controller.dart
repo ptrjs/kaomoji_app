@@ -1,23 +1,38 @@
-
 import 'package:flutter/material.dart';
 import 'package:kaomoji_app/core.dart';
 import '../view/favorite_view.dart';
 
-class FavoriteController extends State<FavoriteView> {
-    static late FavoriteController instance;
-    late FavoriteView view;
+class FavoriteController extends State<FavoriteView>
+    with AutomaticKeepAliveClientMixin {
+  static late FavoriteController instance;
+  late FavoriteView view;
 
-    @override
-    void initState() {
-        instance = this;
-        super.initState();
-    }
+  @override
+  void initState() {
+    instance = this;
 
-    @override
-    void dispose() => super.dispose();
+    super.initState();
+    scrollController = ScrollController(initialScrollOffset: 0.0);
+  }
 
-    @override
-    Widget build(BuildContext context) => widget.build(context, this);
+  @override
+  void dispose() {
+    scrollController.dispose();
+    super.dispose();
+  }
+
+  @override
+  bool get wantKeepAlive => true;
+
+  @override
+  Widget build(BuildContext context) => widget.build(context, this);
+
+  ScrollController scrollController = ScrollController();
+
+  removeFavorite(index) {
+    favorite.removeAt(index);
+    setState(() {});
+  }
+
+  List favorite = [];
 }
-        
-    
