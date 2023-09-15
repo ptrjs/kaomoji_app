@@ -17,4 +17,13 @@ class FavoriteController extends State<FavoriteView> {
 
   @override
   Widget build(BuildContext context) => widget.build(context, this);
+
+  ScrollController scrollController = ScrollController();
+
+  removeFavorite(index) {
+    favorite.removeAt(index);
+    setState(() {});
+  }
+
+  List favorite = [];
 }
