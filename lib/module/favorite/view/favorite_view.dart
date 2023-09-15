@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kaomoji_app/core.dart';
+import '../../../general_method/general_method.dart';
 import '../controller/favorite_controller.dart';
 
 class FavoriteView extends StatefulWidget {
