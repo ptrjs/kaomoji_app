@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:kaomoji_app/core.dart';
-import '../../../general_method/general_method.dart';
 import '../controller/favorite_controller.dart';
 
 class FavoriteView extends StatefulWidget {
@@ -13,33 +12,8 @@ class FavoriteView extends StatefulWidget {
       body: SingleChildScrollView(
         child: Container(
           padding: const EdgeInsets.all(10.0),
-          child: Column(
-            children: [
-              ListView.builder(
-                controller: controller.scrollController,
-                itemCount: controller.favorite.length,
-                physics: ScrollPhysics(),
-                shrinkWrap: true,
-                itemBuilder: (BuildContext context, int index) {
-                  var item = controller.favorite[index];
-                  Color cardColor = index % 2 == 0
-                      ? Color.fromARGB(255, 251, 243, 255)
-                      : Colors.white;
-                  return GestureDetector(
-                    onTap: () => GeneralMethod().copyTextToClipboard(item),
-                    onDoubleTap: () => controller.removeFavorite(item),
-                    child: Card(
-                      color: cardColor,
-                      child: ListTile(
-                        title: Center(
-                          child: Text(item),
-                        ),
-                      ),
-                    ),
-                  );
-                },
-              ),
-            ],
+          child: const Column(
+            children: [],
           ),
         ),
       ),

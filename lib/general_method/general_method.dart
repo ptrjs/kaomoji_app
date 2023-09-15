@@ -19,16 +19,5 @@ class GeneralMethod {
     });
   }
 
-  addToFavorite(item) {
-    FavoriteController.instance.favorite.add(item);
-    Fluttertoast.showToast(
-      msg: "$item Added to Favorite",
-      toastLength: Toast.LENGTH_SHORT,
-      gravity: ToastGravity.BOTTOM,
-      timeInSecForIosWeb: 1,
-      backgroundColor: Colors.white,
-      textColor: Colors.deepPurple,
-      fontSize: 16.0,
-    );
-  }
+  addToFavorite(item) {}
 }
