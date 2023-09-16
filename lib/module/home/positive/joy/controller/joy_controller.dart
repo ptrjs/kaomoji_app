@@ -1,8 +1,7 @@
-import 'package:clipboard/clipboard.dart';
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
+
 import 'package:kaomoji_app/core.dart';
-import 'package:kaomoji_app/general_method/general_method.dart';
+
 import '../view/joy_view.dart';
 
 class JoyController extends State<JoyView> with AutomaticKeepAliveClientMixin {
@@ -32,7 +31,7 @@ class JoyController extends State<JoyView> with AutomaticKeepAliveClientMixin {
   }
 
   ScrollController scrollController = ScrollController();
-  List joy = [
+  List<String> joy = [
     "(* ^ ω ^)",
     "(´ ∀ ` *)",
     "٩(◕‿◕｡)۶",

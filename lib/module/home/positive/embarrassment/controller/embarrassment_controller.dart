@@ -31,7 +31,7 @@ class EmbarrassmentController extends State<EmbarrassmentView>
 
   ScrollController scrollController = ScrollController();
 
-  List embarassment = [
+  List<String> embarassment = [
     "(⌒_⌒;)",
     "(o^ ^o)",
     "(*/ω＼)",

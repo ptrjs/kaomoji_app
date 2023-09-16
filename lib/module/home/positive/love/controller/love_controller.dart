@@ -32,7 +32,7 @@ class LoveController extends State<LoveView>
 
   ScrollController scrollController = ScrollController();
 
-  List love = [
+  List<String> love = [
     "(ﾉ´ з `)ノ",
     "(♡μ_μ)",
     "(*^^*)♡",

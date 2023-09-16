@@ -31,7 +31,7 @@ class SympathyController extends State<SympathyView>
 
   ScrollController scrollController = ScrollController();
 
-  List sympathy = [
+  List<String> sympathy = [
     "(ノ_<。)ヾ(´ ▽ ` )",
     "｡･ﾟ･(ﾉД`)ヽ(￣ω￣ )",
     "ρ(- ω -、)ヾ(￣ω￣; )",
