@@ -5,7 +5,7 @@ import 'package:kaomoji_app/core.dart';
 import 'package:kaomoji_app/general_method/general_method.dart';
 import '../view/joy_view.dart';
 
-class JoyController extends State<JoyView> {
+class JoyController extends State<JoyView> with AutomaticKeepAliveClientMixin {
   static late JoyController instance;
   late JoyView view;
 
@@ -13,14 +13,25 @@ class JoyController extends State<JoyView> {
   void initState() {
     instance = this;
     super.initState();
+    scrollController = ScrollController(initialScrollOffset: 0.0);
   }
 
   @override
-  void dispose() => super.dispose();
+  void dispose() {
+    scrollController.dispose();
+    super.dispose();
+  }
 
   @override
-  Widget build(BuildContext context) => widget.build(context, this);
+  bool get wantKeepAlive => true;
 
+  @override
+  Widget build(BuildContext context) {
+    super.build(context);
+    return widget.build(context, this);
+  }
+
+  ScrollController scrollController = ScrollController();
   List joy = [
     "(* ^ ω ^)",
     "(´ ∀ ` *)",

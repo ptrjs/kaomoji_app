@@ -1,23 +1,48 @@
-
 import 'package:flutter/material.dart';
 import 'package:kaomoji_app/core.dart';
 import '../view/sympathy_view.dart';
 
-class SympathyController extends State<SympathyView> {
-    static late SympathyController instance;
-    late SympathyView view;
+class SympathyController extends State<SympathyView>
+    with AutomaticKeepAliveClientMixin {
+  static late SympathyController instance;
+  late SympathyView view;
 
-    @override
-    void initState() {
-        instance = this;
-        super.initState();
-    }
+  @override
+  void initState() {
+    instance = this;
+    super.initState();
+    scrollController = ScrollController(initialScrollOffset: 0.0);
+  }
 
-    @override
-    void dispose() => super.dispose();
+  @override
+  void dispose() {
+    scrollController.dispose();
+    super.dispose();
+  }
 
-    @override
-    Widget build(BuildContext context) => widget.build(context, this);
+  @override
+  bool get wantKeepAlive => true;
+
+  @override
+  Widget build(BuildContext context) {
+    super.build(context);
+    return widget.build(context, this);
+  }
+
+  ScrollController scrollController = ScrollController();
+
+  List sympathy = [
+    "(ノ_<。)ヾ(´ ▽ ` )",
+    "｡･ﾟ･(ﾉД`)ヽ(￣ω￣ )",
+    "ρ(- ω -、)ヾ(￣ω￣; )",
+    "ヽ(￣ω￣(。。 )ゝ",
+    "(*´ I `)ﾉﾟ(ﾉД｀ﾟ)ﾟ｡",
+    "ヽ(~_~(・_・ )ゝ",
+    "(ﾉ_；)ヾ(´ ∀ ` )",
+    "(; ω ; )ヾ(´∀`* )",
+    "(*´ー)ﾉ(ノд`)",
+    "(´-ω-`( _ _ )",
+    "(っ´ω`)ﾉ(╥ω╥)",
+    "(ｏ・_・)ノ”(ノ_<、)",
+  ];
 }
-        
-    
