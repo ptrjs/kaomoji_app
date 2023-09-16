@@ -5,24 +5,7 @@ it means you have to rename it to something more unique.
 */
 export 'package:kaomoji_app/module/favorite/controller/favorite_controller.dart';
 export 'package:kaomoji_app/module/favorite/view/favorite_view.dart';
-export 'package:kaomoji_app/module/home/animals/animals_main_navigation/controller/animals_main_navigation_controller.dart';
-export 'package:kaomoji_app/module/home/animals/animals_main_navigation/view/animals_main_navigation_view.dart';
-export 'package:kaomoji_app/module/home/animals/bear/controller/bear_controller.dart';
-export 'package:kaomoji_app/module/home/animals/bear/view/bear_view.dart';
-export 'package:kaomoji_app/module/home/animals/bird/controller/bird_controller.dart';
-export 'package:kaomoji_app/module/home/animals/bird/view/bird_view.dart';
-export 'package:kaomoji_app/module/home/animals/cat/controller/cat_controller.dart';
-export 'package:kaomoji_app/module/home/animals/cat/view/cat_view.dart';
-export 'package:kaomoji_app/module/home/animals/dog/controller/dog_controller.dart';
-export 'package:kaomoji_app/module/home/animals/dog/view/dog_view.dart';
-export 'package:kaomoji_app/module/home/animals/fish/controller/fish_controller.dart';
-export 'package:kaomoji_app/module/home/animals/fish/view/fish_view.dart';
-export 'package:kaomoji_app/module/home/animals/pig/controller/pig_controller.dart';
-export 'package:kaomoji_app/module/home/animals/pig/view/pig_view.dart';
-export 'package:kaomoji_app/module/home/animals/rabbit/controller/rabbit_controller.dart';
-export 'package:kaomoji_app/module/home/animals/rabbit/view/rabbit_view.dart';
-export 'package:kaomoji_app/module/home/animals/spider/controller/spider_controller.dart';
-export 'package:kaomoji_app/module/home/animals/spider/view/spider_view.dart';
+
 export 'package:kaomoji_app/module/home/home_main_navigation/controller/home_main_navigation_controller.dart';
 export 'package:kaomoji_app/module/home/home_main_navigation/view/home_main_navigation_view.dart';
 export 'package:kaomoji_app/module/home/home_tab_navigation/controller/home_tab_navigation_controller.dart';
@@ -49,26 +32,7 @@ export 'package:kaomoji_app/module/home/neutral/neutral_main_navigation/controll
 export 'package:kaomoji_app/module/home/neutral/neutral_main_navigation/view/neutral_main_navigation_view.dart';
 export 'package:kaomoji_app/module/home/neutral/surprise/controller/surprise_controller.dart';
 export 'package:kaomoji_app/module/home/neutral/surprise/view/surprise_view.dart';
-export 'package:kaomoji_app/module/home/other/enemies/controller/enemies_controller.dart';
-export 'package:kaomoji_app/module/home/other/enemies/view/enemies_view.dart';
-export 'package:kaomoji_app/module/home/other/faces/controller/faces_controller.dart';
-export 'package:kaomoji_app/module/home/other/faces/view/faces_view.dart';
-export 'package:kaomoji_app/module/home/other/food/controller/food_controller.dart';
-export 'package:kaomoji_app/module/home/other/food/view/food_view.dart';
-export 'package:kaomoji_app/module/home/other/friends/controller/friends_controller.dart';
-export 'package:kaomoji_app/module/home/other/friends/view/friends_view.dart';
-export 'package:kaomoji_app/module/home/other/games/controller/games_controller.dart';
-export 'package:kaomoji_app/module/home/other/games/view/games_view.dart';
-export 'package:kaomoji_app/module/home/other/magic/controller/magic_controller.dart';
-export 'package:kaomoji_app/module/home/other/magic/view/magic_view.dart';
-export 'package:kaomoji_app/module/home/other/music/controller/music_controller.dart';
-export 'package:kaomoji_app/module/home/other/music/view/music_view.dart';
-export 'package:kaomoji_app/module/home/other/other_main_navigation/controller/other_main_navigation_controller.dart';
-export 'package:kaomoji_app/module/home/other/other_main_navigation/view/other_main_navigation_view.dart';
-export 'package:kaomoji_app/module/home/other/special/controller/special_controller.dart';
-export 'package:kaomoji_app/module/home/other/special/view/special_view.dart';
-export 'package:kaomoji_app/module/home/other/weapons/controller/weapons_controller.dart';
-export 'package:kaomoji_app/module/home/other/weapons/view/weapons_view.dart';
+
 export 'package:kaomoji_app/module/home/positive/embarrassment/controller/embarrassment_controller.dart';
 export 'package:kaomoji_app/module/home/positive/embarrassment/view/embarrassment_view.dart';
 export 'package:kaomoji_app/module/home/positive/joy/controller/joy_controller.dart';

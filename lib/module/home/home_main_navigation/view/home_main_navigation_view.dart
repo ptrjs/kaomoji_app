@@ -8,16 +8,14 @@ class HomeMainNavigationView extends StatefulWidget {
     controller.view = this;
 
     return DefaultTabController(
-      length: 4,
+      length: 3,
       initialIndex: controller.selectedIndex,
       child: Scaffold(
         body: IndexedStack(
           index: controller.selectedIndex,
           children: [
             HomeTabNavigationView(),
-            Container(
-              color: Colors.green,
-            ),
+            FavoriteView(),
             Container(
               color: Colors.blue,
             ),
@@ -36,12 +34,6 @@ class HomeMainNavigationView extends StatefulWidget {
                 Icons.dashboard,
               ),
               label: "Dashboard",
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(
-                Icons.list,
-              ),
-              label: "Order",
             ),
             BottomNavigationBarItem(
               icon: Icon(

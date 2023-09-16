@@ -9,7 +9,7 @@ class HomeTabNavigationView extends StatefulWidget {
     controller.view = this;
 
     return DefaultTabController(
-      length: 6,
+      length: 3,
       child: Scaffold(
         appBar: AppBar(
           bottom: const TabBar(
@@ -25,15 +25,6 @@ class HomeTabNavigationView extends StatefulWidget {
               Tab(
                 text: "Neutral",
               ),
-              Tab(
-                text: "Various",
-              ),
-              Tab(
-                text: "Animals",
-              ),
-              Tab(
-                text: "Other",
-              ),
             ],
           ),
           title: const Text('Kaomoji'),
@@ -43,9 +34,6 @@ class HomeTabNavigationView extends StatefulWidget {
             PositiveMainNavigationView(),
             NegativeMainNavigationView(),
             NeutralMainNavigationView(),
-            VariousMainNavigationView(),
-            AnimalsMainNavigationView(),
-            OtherMainNavigationView(),
           ],
         ),
       ),

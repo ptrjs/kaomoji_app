@@ -26,6 +26,7 @@ class JoyView extends StatefulWidget {
                       : Colors.white;
                   return GestureDetector(
                     onTap: () => GeneralMethod().copyTextToClipboard(item),
+                    onDoubleTap: () => GeneralMethod().addToFavorite(item),
                     child: Card(
                       color: cardColor,
                       child: ListTile(
