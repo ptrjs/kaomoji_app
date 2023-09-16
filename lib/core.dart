@@ -43,24 +43,5 @@ export 'package:kaomoji_app/module/home/positive/positive_main_navigation/contro
 export 'package:kaomoji_app/module/home/positive/positive_main_navigation/view/positive_main_navigation_view.dart';
 export 'package:kaomoji_app/module/home/positive/sympathy/controller/sympathy_controller.dart';
 export 'package:kaomoji_app/module/home/positive/sympathy/view/sympathy_view.dart';
-export 'package:kaomoji_app/module/home/various/apologizing/controller/apologizing_controller.dart';
-export 'package:kaomoji_app/module/home/various/apologizing/view/apologizing_view.dart';
-export 'package:kaomoji_app/module/home/various/greeting/controller/greeting_controller.dart';
-export 'package:kaomoji_app/module/home/various/greeting/view/greeting_view.dart';
-export 'package:kaomoji_app/module/home/various/hiding/controller/hiding_controller.dart';
-export 'package:kaomoji_app/module/home/various/hiding/view/hiding_view.dart';
-export 'package:kaomoji_app/module/home/various/hugging/controller/hugging_controller.dart';
-export 'package:kaomoji_app/module/home/various/hugging/view/hugging_view.dart';
-export 'package:kaomoji_app/module/home/various/nosebleeding/controller/nosebleeding_controller.dart';
-export 'package:kaomoji_app/module/home/various/nosebleeding/view/nosebleeding_view.dart';
-export 'package:kaomoji_app/module/home/various/running/controller/running_controller.dart';
-export 'package:kaomoji_app/module/home/various/running/view/running_view.dart';
-export 'package:kaomoji_app/module/home/various/sleeping/controller/sleeping_controller.dart';
-export 'package:kaomoji_app/module/home/various/sleeping/view/sleeping_view.dart';
-export 'package:kaomoji_app/module/home/various/various_main_navigation/controller/various_main_navigation_controller.dart';
-export 'package:kaomoji_app/module/home/various/various_main_navigation/view/various_main_navigation_view.dart';
-export 'package:kaomoji_app/module/home/various/winking/controller/winking_controller.dart';
-export 'package:kaomoji_app/module/home/various/winking/view/winking_view.dart';
-export 'package:kaomoji_app/module/home/various/writing/controller/writing_controller.dart';
-export 'package:kaomoji_app/module/home/various/writing/view/writing_view.dart';
+
 export 'package:kaomoji_app/state_util.dart';
